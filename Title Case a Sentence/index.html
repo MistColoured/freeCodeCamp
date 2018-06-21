@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+
+<script>
+
+function titleCase (str) {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase().concat(str[i].slice(1));
+  }
+  return str.join(' ');
+}
+
+function es6Case (str) {
+  return str.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase().concat(word.slice(1))).join(' ');
+}
+
+const challenge = es6Case("I'm a liTTle tea pOT")
+ document.getElementById('app').innerText=challenge
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+
+<script>
+
+function repeatString (str, num) {
+  repeatedString = '';
+  while (num > 0) {
+    repeatedString = repeatedString += str;
+    num--
+  }
+  return repeatedString;
+}
+
+function repeatRecursion (str, num) {
+    if (num < 0) return '';
+    return num === 1 ? str : str.concat(repeatRecursion(str, num -1));
+}
+
+function es6Repeat(str, num) {
+  return num > 0 ? str.repeat(num) : '';
+}
+
+const challenge = es6Repeat('some more toffee ', 0)
+ document.getElementById('app').innerText=challenge
+
+</script>
+</body>
+</html>

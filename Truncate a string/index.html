@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+
+<script>
+
+function truncateString (str, num) {
+  if (num <= 3) return str.slice(0, num).concat('...');
+  return Number(num) < (str.length - num) ? str.slice(0, num - 3).concat('...') : str;
+}
+
+const challenge = truncateString("A-tisket a-tasket A green and yellow basket", 11)
+ document.getElementById('app').innerText=challenge
+
+</script>
+</body>
+</html>

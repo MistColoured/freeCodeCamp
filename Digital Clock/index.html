@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+<button onclick="digitalClock()">Click Me</button>
+<script>
+
+function digitalClock() {
+  var time = new Date();
+  var hours = time.getHours();
+  var minutes = time.getMinutes();
+  var seconds = time.getSeconds();
+  output = hours > 12 ? hours - 12 : hours
+  if (hours == 12) {
+    output = '12';
+  }
+  output += minutes < 10 ? `:0${minutes}` : `:${minutes}`;
+  output += seconds < 10 ? `:0${seconds}` : `:${seconds}`;
+  output += hours > 12 ? ' P.M.' : ' A.M.';
+
+  document.getElementById('app').innerText = output;
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+
+<script>
+
+function rot13(str) {
+    return str.replace(/[A-Z]/g, char => String.fromCharCode((char.charCodeAt(0) % 26) + 65));
+}
+
+  // Change the inputs below to test
+  const challenge = rot13("SERR PBQR PNZC");
+
+  console.log(challenge);
+
+</script>
+</body>
+</html>

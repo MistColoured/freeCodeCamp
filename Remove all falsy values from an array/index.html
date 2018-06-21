@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+
+<script>
+function removeFalse(arr) {
+  return arr.filter(a => a === 'ate');
+}
+
+function removeFalsey(arr) {
+    return arr.filter(Boolean);
+}
+
+const challenge = removeFalsey([7, "ate", "", false, 9])
+ document.getElementById('app').innerText=challenge
+
+</script>
+</body>
+</html>

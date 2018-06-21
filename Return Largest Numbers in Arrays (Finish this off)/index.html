@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+
+<script>
+testArray = [19, 7, 6, 49, 31, 23]
+
+function maxArray (arr) {
+  var max = -Infinity;
+  var num = arr.length;
+  while(num--) {
+    if (arr[num] > max) {
+      max = arr[num];
+    }
+  }
+  return max;
+}
+
+function minArray (arr) {
+  var min = Infinity;
+  var num = arr.length;
+  while (num--) {
+    console.log(num);
+    if (arr[num] < min) {
+      min = arr[num];
+    }
+  }
+  return min;
+}
+
+const challenge = minArray(testArray)
+ document.getElementById('app').innerText=challenge
+
+</script>
+</body>
+</html>

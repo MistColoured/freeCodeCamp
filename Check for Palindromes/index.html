@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p id="app">Insert here</p>
+
+<script>
+
+function palindrome (str) {
+  const removeNon = str.match(/[a-z0-9]/gi).map(char => char.toLowerCase());
+  return removeNon.join('') === removeNon.reverse().join('');
+}
+
+const challenge = palindrome('eye for of eye')
+ document.getElementById('app').innerText=challenge
+
+</script>
+</body>
+</html>
