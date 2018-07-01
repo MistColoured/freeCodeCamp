@@ -9,6 +9,6 @@ const orders = [
 
 const total = (acc, val) => acc + val;
 
-const totalAmount = orders.map(el => el.amount).reduce(total, 0)
+const totalAmount = orders.reduce((acc, value) => acc + value.amount, 0)
 
-console.log(totalAmount);
+totalAmount

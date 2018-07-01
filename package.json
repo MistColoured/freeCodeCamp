@@ -1,5 +1,5 @@
 {
-  "name": "freeCodeCamp",
+  "name": "freecodecamp",
   "version": "1.0.0",
   "description": "JavaScript code snippets",
   "main": "index.js",
@@ -7,17 +7,17 @@
   "author": "Michael Allen",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "@babel/core": "^7.0.0-beta.51",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
     "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.9.1"
-  }
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-restricted-globals": "^0.1.1",
+    "espree": "^4.0.0",
+    "object.assign": "^4.1.0",
+    "object.entries": "^1.0.4"
+  },
+  "dependencies": {}
 }

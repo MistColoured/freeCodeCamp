@@ -1,4 +1,5 @@
-const num = 123e2;
+const myFunction = () => {
+  console.log('Hello');
+};
 
-console.log(num)
-
+myFunction();

@@ -2,10 +2,11 @@
 const numbers = [1, 11, 24, 4, 3, 17];
 
 const only = numbers.reduce((acc, val) => {
-  if (val < 12) {
-    acc += val;
+  if (val > 6) {
+    return acc + val
+  } else {
+    return acc
   }
-  return acc;
-}, 0);
+}, 0)
 
-console.log(only);
+only
