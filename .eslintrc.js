@@ -23,7 +23,8 @@ module.exports = {
         },
     },
     'rules': {
-    // Own rules:
+    // QoL
     'no-unused-expressions': 'off',
+    // Permanent preferences
   }
 }
