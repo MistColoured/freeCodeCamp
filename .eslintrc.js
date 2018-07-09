@@ -25,6 +25,11 @@ module.exports = {
     'rules': {
     // QoL
     'no-unused-expressions': 'off',
+    'no-undef': 'off',
+    'no-console': 'off',
+    'no-plus': {
+        'allowForLoopAfterthoughts': true
+    }
     // Permanent preferences
   }
 }
